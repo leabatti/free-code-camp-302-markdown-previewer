@@ -5,27 +5,46 @@ import ReactMarkdown from "react-markdown";
 // defaultMarkdown contains valid markdown that represents at least one of each of the following elements: a heading element (H1 size), a sub heading element (H2 size), a link, inline code, a code block, a list item, a blockquote, an image, and bolded text.
 
 const defaultMarkdown = `
-# Title
+# Markdown
 
-## Subtitle
+**From Wikipedia, the free encyclopedia**
 
-Link to the webpage [link](https://www.firstweb.com).
+Markdown is a lightweight markup language for creating formatted text using a plain-text editor. John Gruber created Markdown in 2004 as an easy-to-read markup language. Markdown is widely used for blogging and instant messaging, and also used elsewhere in online forums, collaborative software, documentation pages, and readme files.
 
-Here is some \`inline code\`.
+The initial description of Markdown contained ambiguities and raised unanswered questions, causing implementations to both intentionally and accidentally diverge from the original version. This was addressed in 2014 when long-standing Markdown contributors released CommonMark, an unambiguous specification and test suite for Markdown.
+
+Link to the official webpage [link](https://daringfireball.net/projects/markdown).
+
+Link to the Wikipedia article [link](https://en.wikipedia.org/wiki/Markdown).
+
+**Here is some \`inline code\`.**
 
 \`\`\`
-This is a code block.
+# A first-level heading
+## A second-level heading
+### A third-level heading
 \`\`\`
 
-- Item 1
-- Item 2
-- Item 3
+## Markdown Extra
 
-> This is a blockquote.
+**Markdown Extra** is a lightweight markup language based on Markdown implemented in PHP (originally), Python and Ruby. It adds the following features that are not available with regular Markdown:
 
-![Alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png)
+- Markdown markup inside HTML blocks
+- Elements with id/class attribute
+- "Fenced code blocks" that span multiple lines of code
+- Tables
+- Definition lists
+- Footnotes
+- Abbreviations
 
-**Bolded text**
+## Acknowledgements
+
+> "Aaron Swartz deserves a tremendous amount of credit for his feedback on the design of Markdown's formatting syntax. Markdown is much better thanks to Aaron's ideas, feedback, and testing. Also, Aaron's html2text is a very handy (and free) utility for turning HTML into Markdown-formatted plain text.
+" - John Gruber
+
+![Markdown logo](https://www.markdownguide.org/assets/images/markdown-mark-white.svg)
+
+Markdown logo
 `;
 
 function App() {
